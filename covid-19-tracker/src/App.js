@@ -5,10 +5,12 @@ import {
   Select
 } from "@material-ui/core";
 import './App.css';
+import InfoBox from './InfoBox.js';
 
 function App() {
 
 const [countries, setCountries] = useState([]);
+const [country, setCountry] = useState("worldwide");
 
 // https://disease.sh/v3/covid-19/countries
 
@@ -32,15 +34,25 @@ useEffect(() => {
   getCountriesData();
 }, []);
 
+
+const onCountryChange = async (event) => {
+  const countryCode = event.target.value;
+
+  console.log('YOOO>>>>', countryCode);
+
+  setCountry(countryCode);
+}
+
   return (
     <div className="App">
       <div className="app__header">
         <h1>COVID-19 Tracker</h1>
         <FormControl className="app__dropdown">
-          <Select variant="outlined" value="abc">
+          <Select variant="outlined" onChange = {onCountryChange} value={country}>
 
             {/* Loop through all the countries and show a drop down. */}
 
+            <MenuItem value="worldwide">Worldwide</MenuItem>
             {countries.map((country) => (
 
             <MenuItem value={country.value}>{country.name}</MenuItem> 
@@ -59,6 +71,24 @@ useEffect(() => {
         </FormControl>
 
       </div>
+
+      <div className = "app__stats">
+        <InfoBox title="Coronavirus cases" total={2000} / >
+
+
+        <InfoBox title="Recovered" total={3000} />
+
+
+        <InfoBox title="Deaths" total={4000} />
+
+              {/* InfoBoxes  "Coronavirus cases" */}
+                {/* InfoBoxes "Coronavirus recoveries" */}
+                  {/* InfoBoxes */}
+
+      </div>
+
+     
+
 
 
 
