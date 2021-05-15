@@ -11,6 +11,7 @@ import InfoBox from './InfoBox.js';
 import Map from './Map.js';
 import Table from './Table.js';
 import { sortData } from "./util";
+import LineGraph from "./LineGraph";
 
 
 function App() {
