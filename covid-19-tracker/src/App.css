@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 
 *{
@@ -8,10 +8,33 @@
 
 }
 
+body{
+  background-color: rgb(238, 238, 238) ;
+}
+
+.App{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+
 .app__header{
   display:flex;
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
 
+}
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 745px){
+  .App{
+    flex-direction: column;
+
+  }
 }
