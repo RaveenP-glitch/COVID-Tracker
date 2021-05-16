@@ -120,9 +120,7 @@ function App() {
 
         </div>
         {/* Map */}
-        <Map>
-
-        </Map>
+        <Map/>
 
 
       </div>
