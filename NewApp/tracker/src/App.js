@@ -4,12 +4,12 @@ import { fetchData } from './api';
 
 import { Cards, Chart, CountryPicker } from './components';
 
-class App extends Component {
+class App extends React.Component {
 
-  componentDidMount(){
+  async componentDidMount(){
     const data = await fetchData();
 
-    console.log()
+    console.log(data);
   }
 
   render() {
