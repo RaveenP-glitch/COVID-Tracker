@@ -1,16 +1,19 @@
 import React from 'react';
-// import { Cards, CountryPicker, Chart } from './components';
+// import { Cards } from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
-import Cards from './Cards/Cards';
+
 
 // import image from './images/image.png';
 
 class App extends React.Component {
   state = {
-    data: {},
-    country: '',
+    data: {}
+   
   }
+
+
+
 
   async componentDidMount() {
     const data = await fetchData();
@@ -18,22 +21,22 @@ class App extends React.Component {
     this.setState({ data });
   }
 
-  handleCountryChange = async (country) => {
+  handleCountryChange = async () => {
     const data = await fetchData();
 
-    this.setState({ data, country: country });
+    this.setState({ data });
   }
 
   render() {
-    const { data, country } = this.state;
+    // const { data } = this.state;
 
     return (
       <div className={styles.container}>
         {/* <img className={styles.image} src={image} alt="COVID-19" /> */}
-        <Cards data={data}/>
-        <h1>Covid-19 Tracker</h1>
-        
-      
+        {/* <Cards data={data} /> */}
+        {/* <CountryPicker handleCountryChange={this.handleCountryChange} /> */}
+        <h1>Covid-19</h1>
+        <p>{this.state.data}</p>
       </div>
     );
   }

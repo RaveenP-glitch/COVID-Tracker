@@ -1,0 +1,60 @@
+{
+    "data": {
+        "confirmed": {
+            "value": 403224427,
+            "detail": "https://covid19.mathdro.id/api/confirmed"
+        },
+        "recovered": {
+            "value": 2000,
+            "detail": "https://covid19.mathdro.id/api/recovered"
+        },
+        "deaths": {
+            "value": 5777230,
+            "detail": "https://covid19.mathdro.id/api/deaths"
+        },
+        "dailySummary": "https://covid19.mathdro.id/api/daily",
+        "dailyTimeSeries": {
+            "pattern": "https://covid19.mathdro.id/api/daily/[dateString]",
+            "example": "https://covid19.mathdro.id/api/daily/2-14-2020"
+        },
+        "image": "https://covid19.mathdro.id/api/og",
+        "source": "https://github.com/mathdroid/covid19",
+        "countries": "https://covid19.mathdro.id/api/countries",
+        "countryDetail": {
+            "pattern": "https://covid19.mathdro.id/api/countries/[country]",
+            "example": "https://covid19.mathdro.id/api/countries/USA"
+        },
+        "lastUpdate": "2022-02-10T06:21:11.000Z"
+    },
+    "status": 200,
+    "statusText": "",
+    "headers": {
+        "cache-control": "public, s-maxage=60, stale-while-revalidate",
+        "content-length": "757",
+        "content-type": "application/json; charset=utf-8"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "https://covid19.mathdro.id/api"
+    },
+    "request": {}
+}
