@@ -244,6 +244,7 @@ class App extends React.Component {
                     <br/>
                   <h3 className='footer-text'>Last updated: {this.state.stats.update_date_time}</h3>
                   <img className='img2' src={"https://www.hpb.health.gov.lk/assets/img/logo.png"} alt="HPB" width={'314rem'} />
+                  <p>API from HPB Sri Lanka.</p>
               </div>
                
             </div>
