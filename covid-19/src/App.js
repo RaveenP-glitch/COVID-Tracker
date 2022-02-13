@@ -62,7 +62,7 @@ class App extends React.Component {
                 <Container>
                     <Row className='card-container-1'>
                         <Col md="2">
-                            <Card border="primary" style={{ width: '15rem', height: '16rem', borderRadius: '17px', borderBottom: '10px solid rgba(255,0,0,0.5)', background: 'rgba(255, 255, 255, .7)', backdropFilter: 'blur(10px)' }}>
+                            <Card id='card-card' border="primary" style={{ width: '15rem', height: '16rem', borderRadius: '17px', borderBottom: '10px solid rgba(255,0,0,0.5)', background: 'rgba(255, 255, 255, .7)', backdropFilter: 'blur(10px)'}}>
                                 <Card.Header className="c-header">Local New Cases</Card.Header>
                                 <FaAmbulance style={{ marginTop: '2rem', fontSize: '3.4rem' }} />
                                 <Card.Body>

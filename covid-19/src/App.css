@@ -46,7 +46,12 @@
 Card{
   
   font-family: 'Poppins', sans-serif;
+  background-image: url('LKFlag.jpg');
 
+}
+
+#card-card{
+  background-image: url('LKFlag.jpg');
 }
 
 .c-header{
